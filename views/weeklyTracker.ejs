@@ -1,0 +1,182 @@
+<%- include("partials/header") -%>
+
+    <!-- Adds EJS for weeks/ days -->
+    <article id="week1" class="weekly">
+        <h3><i class="fas fa-arrow-circle-right toggle-btn"></i>
+            Friday (4/30) <a href="#top">Top</a>
+        </h3>
+        <div class="container">
+            <!-- For each item in the course, needs a new box. Each box has title span and amount span-->
+            <div class="box">
+                <span class="title">
+                    Item ToDo
+                </span>
+                <span class="numItems">
+                    Amount ToDo -- whether video or lessons
+                </span>
+                <span>
+                    <form action="/update" method="post">
+                        <input type="hidden" name="courseId" value="weeklyDate">
+                        <input type="checkbox" name="sectionId" value="todoId" onChange="this.form.submit()">
+                    </form>
+                </span>
+            </div>
+
+            <div class="box">
+                <span class="title">
+                    Item ToDo
+                </span>
+                <span class="numItems">
+                    Amount ToDo -- whether video or lessons
+                </span>
+                <span>
+                    <form action="/update" method="post">
+                        <input type="hidden" name="courseId" value="weeklyDate">
+                        <input type="checkbox" name="sectionId" value="todoId" onChange="this.form.submit()">
+                    </form>
+                </span>
+            </div>
+
+            <div class="box">
+                <span class="title">
+                    Item ToDo
+                </span>
+                <span class="numItems">
+                    Amount ToDo -- whether video or lessons
+                </span>
+                <span>
+                    <form action="/update" method="post">
+                        <input type="hidden" name="courseId" value="weeklyDate">
+                        <input type="checkbox" name="sectionId" value="todoId" onChange="this.form.submit()">
+                    </form>
+                </span>
+            </div>
+
+            <div class="box">
+                <span class="title">
+                    Item ToDo
+                </span>
+                <span class="numItems">
+                    Amount ToDo -- whether video or lessons
+                </span>
+                <span>
+                    <form action="/update" method="post">
+                        <input type="hidden" name="courseId" value="weeklyDate">
+                        <input type="checkbox" name="sectionId" value="todoId" onChange="this.form.submit()">
+                    </form>
+                </span>
+            </div>
+
+            <div class="box">
+                <span class="title">
+                    Item ToDo
+                </span>
+                <span class="numItems">
+                    Amount ToDo -- whether video or lessons
+                </span>
+                <span>
+                    <form action="/update" method="post">
+                        <input type="hidden" name="courseId" value="weeklyDate">
+                        <input type="checkbox" name="sectionId" value="todoId" onChange="this.form.submit()">
+                    </form>
+                </span>
+            </div>
+
+            <div class="box">
+                <span class="title">
+                    Item ToDo
+                </span>
+                <span class="numItems">
+                    Amount ToDo -- whether video or lessons
+                </span>
+                <span>
+                    <form action="/update" method="post">
+                        <input type="hidden" name="courseId" value="weeklyDate">
+                        <input type="checkbox" name="sectionId" value="todoId" onChange="this.form.submit()">
+                    </form>
+                </span>
+            </div>
+
+            <div class="box">
+                <span class="title">
+                    Item ToDo
+                </span>
+                <span class="numItems">
+                    Amount ToDo -- whether video or lessons
+                </span>
+                <span>
+                    <form action="/update" method="post">
+                        <input type="hidden" name="courseId" value="weeklyDate">
+                        <input type="checkbox" name="sectionId" value="todoId" onChange="this.form.submit()">
+                    </form>
+                </span>
+            </div>
+
+            <div class="box">
+                <span class="title">
+                    Item ToDo
+                </span>
+                <span class="numItems">
+                    Amount ToDo -- whether video or lessons
+                </span>
+                <span>
+                    <form action="/update" method="post">
+                        <input type="hidden" name="courseId" value="weeklyDate">
+                        <input type="checkbox" name="sectionId" value="todoId" onChange="this.form.submit()">
+                    </form>
+                </span>
+            </div>
+        </div>
+        </div>
+        <div class="extraOptions">
+            <form action="/addBtn" method="post">
+                <input type="hidden" name="courseId" value="courseWeek">
+                <button class="add-btn"><i class="fas fa-plus-circle"></i> Add New Todo</button>
+            </form>
+            <!--    <a href="/addSection" class="add-btn"><i class="fas fa-plus-circle"></i> Add</a> -->
+            <p class="timeRemaining">Summary: 3/8 items completed
+            </p>
+        </div>
+    </article>
+    <article id="week1" class="weekly">
+        <h3><i class="fas fa-arrow-circle-right toggle-btn"></i>
+            Saturday (5/1) <a href="#top">Top</a>
+        </h3>
+        <div class="container">
+            <!-- For each item in the course, needs a new box. Each box has title span and amount span-->
+            <div class="box">
+                <span class="title">
+                    Item ToDo
+                </span>
+                <span class="numItems">
+                    Amount ToDo -- whether video or lessons
+                </span>
+                <span>
+                    <form action="/update" method="post">
+                        <input type="hidden" name="courseId" value="weeklyDate">
+                        <input type="checkbox" name="sectionId" value="todoId" onChange="this.form.submit()">
+                    </form>
+                </span>
+            </div>
+
+            <div class="box">
+                <span class="title">
+                    Item ToDo
+                </span>
+                <span class="numItems">
+                    Amount ToDo -- whether video or lessons
+                </span>
+                <span>
+                    <form action="/update" method="post">
+                        <input type="hidden" name="courseId" value="weeklyDate">
+                        <input type="checkbox" name="sectionId" value="todoId" onChange="this.form.submit()">
+                    </form>
+                </span>
+            </div>
+        </div>
+    </article>
+
+    <a href="/addCourse" class="add-btn submit add-course"><i class="fas fa-plus-circle"></i>Add New
+        Week</a>
+
+    <%- include("partials/footer") -%>

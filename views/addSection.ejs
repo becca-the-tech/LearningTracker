@@ -1,0 +1,13 @@
+<%- include("partials/header") -%>
+
+    <div class="formContainer">
+        <h1 class="addForm">Add another section to <%= courseName %>
+        </h1>
+        <form class="addForm" action="/addSection" method="POST">
+            <input type="text" name="sectionTitle" placeholder="Section title"><br>
+            <input type="number" name="sectionAmount" placeholder="Number of Minutes for section"><br>
+            <input type="hidden" name="courseId" value="<%= courseId %>">
+            <button class="addForm submit" type="submit">Submit!</button>
+        </form>
+    </div>
+    <%- include("partials/footer") -%>

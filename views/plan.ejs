@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Becca's Personal Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link href="learningTracker.css" rel="stylesheet" type="text/css" />
+    <style>
+        * {
+            padding-bottom: 10px;
+        }
+
+        section h1 {
+            text-decoration: white underline;
+        }
+
+        section {
+            background-color: black;
+            color: white;
+            min-height: 300px;
+            text-align: center;
+            margin: 0 15%;
+            font-size: 1.1rem;
+        }
+
+        button {
+            color: black;
+            background-color: #3f8fd2;
+            font-size: 1.1rem;
+            margin: 3px;
+            padding: 3px;
+        }
+
+        input {
+            width: 8%;
+            text-align: right;
+            padding-bottom: 5px;
+        }
+
+        input::placeholder {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="top">
+        <div class="nav-img-container">
+            <nav>
+                <a href="#UdemyWebDev">Udemy Web Dev</a> | <a href="#fcc">FreeCodeCamp</a> | <a
+                    href="#codecademy">Codecademy</a> | <a href="./notebook">Notebook</a> | <a href="./plan"
+                    target="_blank">Plan</a>
+            </nav>
+
+            <!--     <figure>
+        <img src="https://images.freeimages.com/images/large-previews/89e/screens-row-1243513.jpg" alt="computer">
+        <figcaption><em>Source</em>: freeimages.com</figcaption>
+    </figure> -->
+            <div class="img-text">
+                <h1>Becca's Learning Tracker</h1>
+                <p>I'm a programmer who loves numbers, books, and nature. These are sources I'm currently learning from;
+                    I
+                    created this to track my progress.</p>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+    <section>
+
+
+        <% let startDate=new Date() %>
+            <% let options={ month: 'long' , day: 'numeric' } %>
+                <% startDate=new Intl.DateTimeFormat('en-US', options).format(startDate) %>
+
+                    <h1>Welcome to My Plan Page</h1>
+                    <h3>The start date is: <%= startDate %>
+                    </h3>
+
+                    <p>If working for: 12 weeks <br>
+                        <strong>Finish Date is: <%= defaultWeeks %></strong>
+                    </p>
+
+                    <h2>Choose Number of Weeks</h2>
+                    <p>If working for:
+                    <form method="post" action="/plan"><input type="number" name="numberWeeks" placeholder="12"><button
+                            type="submit">Submit</button></form><br>
+                    <strong>Finish Date is: <%= chosenWeeks %> </strong></p>
+    </section>
+</body>

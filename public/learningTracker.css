@@ -1,0 +1,377 @@
+/*Colors inspired by: https://colorhunt.co/palette/258092 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*body, nav {
+  background: linear-gradient(95deg, #1f6fd2, navy);
+/*  background: linear-gradient(90deg, navy, #3f8fd2); */
+body {
+  background: linear-gradient(80deg, navy, #177bcc);
+/*  background: #0a6acc; */
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+
+/*figure {
+  float: left;
+  margin: 10px 0 10px 10px;
+}
+*/
+
+.img-text {
+/*  float: right; */
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 1.5%;
+/*  margin-right: 30px;*/
+  /* margin: 50px auto; */
+/*  color: #eae3c8; */
+  color: #a1cae2;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+/*  border-radius: 30px; */
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  font-size: 1.1rem;
+}
+
+.img-text h1{
+  color: #3f8fd2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+/*  color: #a1cae2; */
+}
+
+.add-btn {
+  color: #177bcc;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+span {
+  display: block;
+}
+
+hr {
+  clear: both;
+  opacity: 0;
+  margin-bottom: 15px;
+}
+
+h3 a{
+  position: absolute;
+  right: 7%;
+  font-size: .9rem;
+  text-decoration: none;
+}
+
+nav {
+/*  background: #3f8fd2; */
+/*  background: #eae3c8; */
+  margin: 0;
+  padding: 10px 2px 0 4px;
+}
+
+/* ul {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    width: 100px;
+    height: 100px;
+    border: 1px solid navy;
+    justify-items: space-between;
+    list-style-type: none;
+    padding: 10px;
+} */
+
+strong {
+    display: block;
+    font-weight: normal;
+}
+
+.formContainer {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+input {
+  font-size: 1.2rem;
+  margin: 5px;
+}
+
+input[type="text"]{
+  width: 20rem;
+}
+
+h1.addForm {
+  color: #a1cae2;
+  margin-bottom: 10px;
+}
+
+/*form.addForm {
+  margin: 30px;
+} */
+
+.submit {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  padding: 5px;
+  background: #a1cae2;
+  color: #0a61a8;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.extraOptions {
+  text-align: right;
+}
+
+/*section {
+
+}*/
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.box {
+    width: 100px;
+    height: 120px;
+    border: 1px solid navy;
+    padding: 10px;
+    background: #cfc5a5;
+}
+
+.add-course {
+  margin-left: 40px;
+}
+
+/* .box {
+  text-align: right;
+  padding: 0px 25px;
+  font-size: 1.1rem;
+} */
+
+  div {
+    text-align: right;
+    padding: 0px 25px;
+    font-size: 1.1rem;
+  }
+
+  nav a {
+/*    color:#a1cae2;
+    color: #3f8fd2; */
+    color: #cfc5a5;
+/*    color: #c2b092; */
+    text-decoration: none;
+    background: black;
+    /* opacity: .6; */
+    padding: 2px;
+  }
+
+  nav div {
+    color: #3f8fd2;
+    /*background: black;
+    opacity: .6;*/
+  }
+
+  nav {
+  margin-top: 0px;
+/*  margin-left: 50%; */
+  /* margin-right: 30px; */
+  padding-top: 20px;
+  padding-bottom: 7px;
+/*  background: black;
+  opacity: .8; */
+   }
+
+  nav a:hover {
+/*    color: #a1cae2; */
+    color: #3f8fd2;
+  }
+
+header {
+/* computer
+  background-image: url("https://images.freeimages.com/images/large-previews/89e/screens-row-1243513.jpg");
+  background-image: url("https://images.freeimages.com/images/large-previews/9b0/flat-water-1200111.jpg");
+  background-image: url("https://images.freeimages.com/images/large-previews/cbd/the-ny-public-library-1560401.jpg"); */
+  background-image: url("https://images.freeimages.com/images/large-previews/c33/library-1482719.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.toggle-btn:hover {
+  color: #0a61a8;
+}
+
+.unhide {
+  display: block;
+}
+
+.nav-img-container {
+  float: right;
+  width: 45%;
+  background: black;
+  opacity: 0.8;
+  border-bottom-left-radius: 30px;
+}
+
+  .hidden {
+    display: none;
+  }
+
+  h2, h3 {
+    /*Dark Brown */
+    color: #927022;
+    padding: 10px 0;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  h3 {
+/*    color: #4a47a3; Steel purple color */
+    font-size: 1.3rem;
+  }
+
+  .completed {
+    background: #a1cae2;
+    text-decoration: line-through;
+  }
+
+  .in_progress {
+    /*Lighter than slate purple-- background: #6a67b3; */
+    /*Bright/deep blue for in_progress */
+    background: #3f8fd2;
+/*    Pretty pink background color
+background: rgb(255,100,150); */
+  }
+
+  article {
+    padding: 20px 3%;
+    margin: 2% 3%;
+    opacity: 0.8;
+    border-radius: 30px;
+  }
+
+  article {
+    background: linear-gradient(45deg, #eae3c8 50%, #c2b092 50%);
+/*    background: #eae3c8; */
+  }
+
+  article:nth-of-type(2n){
+    background: linear-gradient(45deg, #c2b092 50%,  #eae3c8 50%);
+/*    background: #c2b092;*/
+  }
+
+a {
+  color: navy;
+  text-decoration-style: dotted;
+}
+
+footer {
+/*  background: #3030b0; */
+  margin-top: 200px;
+  background: #4595c4;
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+table, .weeklyTracker {
+  background: lightblue;
+  margin-left: 10%;
+}
+
+h1.weeklyTracker {
+  display: inline-block;
+  padding: 5px;
+}
+
+th, td {
+  margin: 20px;
+  padding: 10px;
+  border-bottom: 1px solid navy;
+}
+
+.day {
+  border-right: 1px solid black;
+  padding-right: 20px;
+}
+
+.todos {
+  padding-left: 5%;
+}
+
+.past {
+  opacity: 0.3;
+  border-bottom: 1px dotted navy;
+}
+
+.monday {
+  background-color: lavender;
+}
+
+.tuesday {
+  background-color: lightcoral;
+}
+
+.wednesday {
+  background-color: lightcyan;
+}
+
+.thursday {
+  background-color: lightgreen;
+}
+
+.friday {
+  background-color:lightseagreen;
+}
+
+.saturday {
+  background-color: lightyellow;
+}
+
+.sunday {
+  background-color: lightpink;
+}
+
+.note {
+  max-width: 30%;
+  min-height: 120px;
+    border: 1px solid navy;
+    padding: 10px;
+    background: #cfc5a5;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.note .title {
+  text-align: left;
+  font-weight: bold;
+  color: #177bcc;
+  font-size: 1.15rem;
+  padding-bottom: 10px;
+  text-decoration: white underline wavy;
+}

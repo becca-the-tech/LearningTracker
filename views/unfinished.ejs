@@ -1,0 +1,40 @@
+<%- include("partials/header") -%>
+
+    <% let courseTimes=[]; %>
+        <h1>Amount Left</h1>
+        <% courses.forEach(course=> { %>
+            <% let totalTime=0 %>
+                <article id="<%= course.courseTitle %>" class="<%= course.courseTitle %>">
+                    <h3>
+                        <i class="fas fa-arrow-circle-right toggle-btn"></i>
+                        <%= course.courseTitle %> <a href="#top">Top</a>
+                    </h3>
+                    <div class="container">
+                        <% course.courseSections.forEach(section=> { %>
+                            <% section.isComplete ? totalTime +=0 : totalTime +=section.amount %>
+                                <% let isFinished=section.isComplete ? "completed" : "incomplete" %>
+                                    <% if(isFinished !=='completed' ){ %>
+                                        <div class="box %>">
+                                            <span class="title">
+                                                <%= section.title %>
+                                            </span>
+                                        </div>
+                                        <% } %>
+                                            <% }) %>
+                    </div>
+                    <% let totalTimeHrs=Math.floor(totalTime / 60) %>
+                        <% let totalTimeMins=totalTime % 60 %>
+                            <p class="timeRemaining">Time Remaining: <%= totalTimeHrs %> hrs, <%= totalTimeMins %> mins
+                            </p>
+                            <% courseTimes.push(totalTime) %>
+                </article>
+                <% }) %>
+                    <article>
+                        <% let totalStudyTime=courseTimes.reduce((total, currVal)=> total + currVal) %>
+                            <% let totalStudyTimeHrs=Math.floor(totalStudyTime / 60) %>
+                                <% let totalStudyTimeMins=totalStudyTime % 60 %>
+                                    <h3>Total Time To Study: <%= totalStudyTimeHrs %> hrs, <%= totalStudyTimeMins %>
+                                                mins</h3>
+                    </article>
+
+                    <%- include("partials/footer") -%>

@@ -1,0 +1,18 @@
+<%- include("partials/header") -%>
+
+    <!-- <h1>Add another Course!</h1>
+<form action="/addCourse" method="POST">
+    <input type="text" name="courseTitle" placeholder="New Course Name:"><br>
+    <button type="submit">Submit!</button>
+</form> -->
+
+
+    <div class="formContainer">
+        <h1 class="addForm">Add another Course!</h1>
+        <form class="addForm" action="/addCourseNV" method="POST">
+            <input type="text" name="courseTitle" placeholder="New Course Name:"><br>
+            <button class="addForm submit" type="submit">Submit!</button>
+        </form>
+    </div>
+
+    <%- include("partials/footer") -%>

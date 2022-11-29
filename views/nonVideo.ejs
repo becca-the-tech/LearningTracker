@@ -1,0 +1,47 @@
+<%- include("partials/header") -%>
+
+    <!-- Adds EJS variable courseName for id and class -->
+    <% courses.forEach(course=>{ %>
+        <% let total=0 %>
+            <article id="<%= course.courseTitle %>" class="<%= course.courseTitle %> striped">
+                <h3><i class="fas fa-arrow-circle-right toggle-btn"></i>
+                    <%= course.courseTitle %> <a href="#top">Top</a>
+                </h3>
+                <div class="container">
+                    <!-- For each item in the course, needs a new box. Each box has title span and amount span-->
+                    <% course.courseSections.forEach(section=> { %>
+                        <% let isFinished=section.isComplete ? "completed" : "incomplete" %>
+                            <div class="box <%= isFinished %>">
+                                <span class="title">
+                                    <%= section.title %>
+                                </span>
+                                <% section.isComplete ? total +=0 : total +=section.amount %>
+                                    <span class="amount">
+                                        0 / <%= section.amount %>
+                                    </span>
+                                    <span>
+                                        <form action="/updateNV" method="post">
+                                            <input type="hidden" name="courseId" value="<%=course._id%>">
+                                            <input type="checkbox" name="sectionId" value="<%=section._id%>"
+                                                onChange="this.form.submit()">
+                                        </form>
+                                    </span>
+                            </div>
+                            <% }) %>
+                </div>
+                <div class="extraOptions">
+                    <form action="/addBtnNV" method="post">
+                        <input type="hidden" name="courseId" value="<%=course._id%>">
+                        <button class="add-btn"><i class="fas fa-plus-circle"></i> Add New Section</button>
+                    </form>
+                    <!--    <a href="/addSection" class="add-btn"><i class="fas fa-plus-circle"></i> Add</a> -->
+                    <p class="timeRemaining">Amount Remaining: <%= total %>
+                    </p>
+                </div>
+            </article>
+            <% }) %>
+
+                <a href="/addCourseNV" class="add-btn submit add-course"><i class="fas fa-plus-circle"></i>Add New
+                    Course</a>
+
+                <%- include("partials/footer") -%>
